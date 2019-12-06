@@ -1,0 +1,13 @@
+D:\Castro Carlos\Segundo.Parcial_2019\Entidades.sp\bin\Debug\Entidades.sp.dll
+D:\Castro Carlos\Segundo.Parcial_2019\Entidades.sp\bin\Debug\Entidades.sp.pdb
+D:\Castro Carlos\Segundo.Parcial_2019\Entidades.sp\obj\Debug\Entidades.sp.csprojAssemblyReference.cache
+D:\Castro Carlos\Segundo.Parcial_2019\Entidades.sp\obj\Debug\Entidades.sp.csproj.CoreCompileInputs.cache
+D:\Castro Carlos\Segundo.Parcial_2019\Entidades.sp\obj\Debug\Entidades.sp.dll
+D:\Castro Carlos\Segundo.Parcial_2019\Entidades.sp\obj\Debug\Entidades.sp.pdb
+C:\Users\Carlos-PC\Desktop\Programacion\Segundo.Parcial_2019\Entidades.sp\bin\Debug\Entidades.sp.dll
+C:\Users\Carlos-PC\Desktop\Programacion\Segundo.Parcial_2019\Entidades.sp\bin\Debug\Entidades.sp.pdb
+C:\Users\Carlos-PC\Desktop\Programacion\Segundo.Parcial_2019\Entidades.sp\obj\Debug\Entidades.sp.csprojAssemblyReference.cache
+C:\Users\Carlos-PC\Desktop\Programacion\Segundo.Parcial_2019\Entidades.sp\obj\Debug\Entidades.sp.csproj.CoreCompileInputs.cache
+C:\Users\Carlos-PC\Desktop\Programacion\Segundo.Parcial_2019\Entidades.sp\obj\Debug\Entidades.sp.dll
+C:\Users\Carlos-PC\Desktop\Programacion\Segundo.Parcial_2019\Entidades.sp\obj\Debug\Entidades.sp.pdb
+C:\Users\Carlos-PC\Desktop\Programacion\Segundo.Parcial_2019\Entidades.sp\bin\Debug\Entidades.sp.dll.config
