@@ -7,9 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 using System.Data.SqlClient;
-using Entidades.sp;
+using Entidades;
 
 namespace SP
 {
@@ -32,7 +31,7 @@ namespace SP
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Castro Carlos");
+            MessageBox.Show("Apellido y nombre del alumno...");
         }
 
         //Crear la siguiente jerarquía de clases:
@@ -140,13 +139,10 @@ namespace SP
             {
                 this.c_duraznos += this._durazno;
             }
-            catch (CajonLlenoException ex)
+            catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message);
             }
-            
-
         }
 
         //Si el precio total del cajon supera los 55 pesos, se disparará el evento EventoPrecio. 
@@ -156,11 +152,12 @@ namespace SP
         private void btnPunto5_Click(object sender, EventArgs e)
         {
             //Asociar manejador de eventos y crearlo en la clase Manejadora (de instancia).
-            this.c_bananas.PrecioMayor50 += new Cajon<Banana>.PrecioSuperado(this.c_bananas.PrecioSuperadoMsg);
+            ManejadoraDeEventos manejadoraDeEventos = new ManejadoraDeEventos();
+            this.c_bananas.precioMayor50 += manejadoraDeEventos.precioSuperado;
             this.c_bananas += new Banana("verde", 2, "argentina");
             this.c_bananas += new Banana("amarilla", 4, "ecuador");
         }
-        
+
         //Obtener de la base de datos (sp_lab_II) el listado de frutas:
         //frutas { id(autoincremental - numérico) - nombre(cadena) - peso(numérico) - precio(numérico) }. 
         //Invocar al método ObtenerListadoFrutas.
@@ -211,13 +208,13 @@ namespace SP
             {
                 MessageBox.Show("No se ha eliminado la fruta de la base de datos");
             }
-            
+
         }
 
         private static string ObtenerListadoFrutas()
         {
-            string cmd = "SELECT [id],[nombre],[peso],[precio]FROM[sp_lab_II].[dbo].[frutas]";
-            string retorno="";
+            string cmd = "SELECT * FROM dbo.frutas";
+            string retorno = "";
             SqlConnection conexion;
             SqlCommand comando;
             SqlDataReader reader;
@@ -230,17 +227,17 @@ namespace SP
                 while (reader.Read() != false)
                 {
                     //frutas { id(autoincremental - numérico) - nombre(cadena) - peso(numérico) - precio(numérico) }
-                    retorno += String.Format("{0} {1} {2}\n",reader["nombre"].ToString(), reader["peso"].ToString(), reader["precio"].ToString());
+                    retorno += String.Format("{0} {1} {2}\n", reader["nombre"].ToString(), reader["peso"].ToString(), reader["precio"].ToString());
                 }
                 reader.Close();
                 conexion.Close();
             }
-            catch (Exception )
+            catch (Exception)
             {
-
             }
+
+
             return retorno;
-            
         }
 
         private static bool AgregarFrutas(SegundoParcial frm)
@@ -266,30 +263,6 @@ namespace SP
                 comando.Parameters.Add(new SqlParameter("@F1", SqlDbType.VarChar));
                 comando.Parameters.Add(new SqlParameter("@F2", SqlDbType.Float));
                 comando.Parameters.Add(new SqlParameter("@F3", SqlDbType.Float));
-
-                /* comando.Parameters[0].Value = frm._banana.Nombre;
-                 comando.Parameters[1].Value = frm._banana.Peso;
-                 comando.Parameters[2].Value = 53;
-                 if (comando.ExecuteNonQuery() == 0)
-                 {
-                     retorno = true;
-                 }
-                 comando.Parameters[0].Value = frm._durazno.Nombre;
-                 comando.Parameters[1].Value = frm._durazno.Peso;
-                 comando.Parameters[2].Value = 32;
-                 if (comando.ExecuteNonQuery() == 0)
-                 {
-                     retorno = true;
-                 }
-                 comando.Parameters[0].Value = frm._manzana.Nombre;
-                 comando.Parameters[1].Value = frm._manzana.Peso;
-                 comando.Parameters[2].Value = 42;
-                 if (comando.ExecuteNonQuery() == 0)
-                 {
-                     retorno = true;
-                 }*/
-
-
                 foreach (Fruta item in aux)
                 {
                     comando.Parameters[0].Value = item.Nombre;
@@ -302,9 +275,8 @@ namespace SP
             }
             catch (Exception)
             {
-                
             }
-            
+
             return retorno;
         }
 
