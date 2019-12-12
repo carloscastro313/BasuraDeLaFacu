@@ -1,0 +1,15 @@
+C:\Users\alumno\Desktop\SP.LabII - Alumnos\Entidades\bin\Debug\Entidades.dll
+C:\Users\alumno\Desktop\SP.LabII - Alumnos\Entidades\bin\Debug\Entidades.pdb
+C:\Users\alumno\Desktop\SP.LabII - Alumnos\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\alumno\Desktop\SP.LabII - Alumnos\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\alumno\Desktop\SP.LabII - Alumnos\Entidades\obj\Debug\Entidades.dll
+C:\Users\alumno\Desktop\SP.LabII - Alumnos\Entidades\obj\Debug\Entidades.pdb
+C:\Users\alumno\Desktop\SP.LabII - Alumnos\Entidades\bin\Debug\System.Net.Http.dll
+C:\Users\alumno\Desktop\SP.LabII - Alumnos\Entidades\bin\Debug\System.Net.Http.xml
+C:\Users\alumno\Desktop\SP.LabII - Alumnos\Entidades\obj\Debug\Entidades.csproj.CopyComplete
+C:\Users\Carlos-PC\Desktop\SP.LabII - Alumnos\Entidades\bin\Debug\Entidades.dll
+C:\Users\Carlos-PC\Desktop\SP.LabII - Alumnos\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Carlos-PC\Desktop\SP.LabII - Alumnos\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Carlos-PC\Desktop\SP.LabII - Alumnos\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Carlos-PC\Desktop\SP.LabII - Alumnos\Entidades\obj\Debug\Entidades.dll
+C:\Users\Carlos-PC\Desktop\SP.LabII - Alumnos\Entidades\obj\Debug\Entidades.pdb
